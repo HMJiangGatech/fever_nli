@@ -78,6 +78,7 @@ def main():
                     if len(newitem['premise']) > 0:
                         newitem['premise'] = ''.join(newitem['premise']).replace('\n',' ')
                         json.dump(newitem, fout)
+                        fout.write('\n')
                     else:
                         print(id, ' has no evidence.')
 
